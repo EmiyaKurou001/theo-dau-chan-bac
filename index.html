@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo Dấu Chân Bác</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+
+    <h1>Theo Dấu Chân Bác</h1>
+
+    <div id="gameContainer">
+
+        <div id="board"></div>
+
+        <div id="ui">
+
+            <div id="playerSetup">
+
+                <input
+                    type="text"
+                    id="player1Name"
+                    placeholder="Tên người chơi 1"
+                >
+
+                <input
+                    type="text"
+                    id="player2Name"
+                    placeholder="Tên người chơi 2"
+                >
+
+                <input
+                    type="text"
+                    id="player3Name"
+                    placeholder="Tên người chơi 3"
+                >
+
+                <input
+                    type="text"
+                    id="player4Name"
+                    placeholder="Tên người chơi 4"
+                >
+                <button id="startGameBtn">
+                    Bắt đầu
+                </button>
+
+            </div>
+            <button id="rollBtn">
+                Nhập kết quả xúc xắc
+            </button>
+
+            <input
+                type="number"
+                id="diceInput"
+                min="1"
+                max="6"
+                placeholder="1 - 6"
+            />
+
+            <p id="diceText">
+                Chưa tung xúc xắc
+            </p>
+
+            <p id="positionText">
+                Vị trí hiện tại:
+            </p>
+            <h2 id="turnText"></h2>
+
+            <p>Hãy tung xúc xắc thật rồi nhập kết quả.</p>
+
+            
+        </div>
+
+    </div>
+
+    <h3>Bảng điểm</h3>
+    
+    <div id="playerScores"></div>
+
+    <div id="modal" class="hidden">
+
+        <div id="modalContent">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalText"></p>
+
+            <input
+                type="text"
+                id="answerInput"
+                placeholder="Nhập đáp án..."
+            >
+            <img id="resultImage">
+
+            <p id="resultCaption"></p>
+            <div id="choicesContainer"></div>
+
+            <br><br>
+
+            <button id="submitAnswerBtn">
+                Trả lời
+            </button>
+
+            <button id="closeModalBtn">
+                Đóng
+            </button>
+
+        </div>
+
+    </div>
+    <div id="resultModal" class="hidden">
+
+        <div id="resultContent">
+
+            <h2>
+                 KẾT THÚC TRÒ CHƠI
+            </h2>
+
+            <p id="winnerText"></p>
+
+            <div id="finalScoreBoard"></div>
+
+            <button id="restartBtn">
+                Chơi lại
+            </button>
+
+        </div>
+
+    </div>
+    <script src="game.js"></script>
+
+</body>
+</html>
