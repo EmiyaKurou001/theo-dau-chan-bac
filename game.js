@@ -302,7 +302,7 @@ const tiles = [
         type: "history",
 
         image:
-            "images/thanh_lap_dang.jpg",
+            "images/thanh_lap_dang_1930.jpg",
 
         caption:
             "Hội nghị hợp nhất các tổ chức cộng sản, thành lập Đảng Cộng sản Việt Nam năm 1930.",
