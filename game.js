@@ -229,6 +229,10 @@ const tiles = [
         name: "Question",
         type: "history",
 
+        image:
+            "images/hcm_young.jpg",
+        caption:
+            "Năm 1920, Nguyễn Ái Quốc tiếp cận chủ nghĩa Mác - Lênin tại Pháp.",
         question:
         "Ai là người tiếp cận chủ nghĩa Mác - Lênin?",
 
@@ -326,6 +330,10 @@ const tiles = [
 
         type: "history",
 
+        image:
+            "images/hongkong.jpg",
+        caption:
+            "Đảng Cộng sản Việt Nam - lực lượng lãnh đạo cách mạng Việt Nam.",
         question:
         "Đảng Cộng sản Việt Nam được thành lập ở đâu?",
 
@@ -364,6 +372,10 @@ const tiles = [
         name: "Question",
         type: "history",
 
+        image:
+            "images/1930.jpg",
+        caption:
+            "Đảng Cộng sản Việt Nam - lực lượng lãnh đạo cách mạng Việt Nam.",
         question:
         "Đảng Cộng sản Việt Nam thành lập năm nào?",
 
@@ -484,6 +496,10 @@ const tiles = [
         name: "Final Question",
         type: "history",
 
+        image:
+            "images/chu_nghia_xa_hoi.jpg",
+        caption:
+            "Hồ Chí Minh - nhà lãnh đạo vĩ đại của cách mạng Việt Nam.",
         question:
         "Tư tưởng Hồ Chí Minh nhấn mạnh điều gì về độc lập dân tộc?",
 
@@ -1196,3 +1212,9 @@ window.onload = () => {
     
     updateScoreText();
 };
+
+restartBtn.addEventListener("click", () => {
+
+    location.reload();
+
+});
