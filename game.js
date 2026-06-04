@@ -90,19 +90,19 @@ const tiles = [
             "Nguyễn Tất Thành thời trẻ. Sinh năm 1890 tại Nghệ An.",
 
         question:
-        "Hồ Chí Minh sinh năm nào?",
+        "Ngày sinh của Chủ tịch Hồ Chí Minh là ngày nào?",
 
         choices: [
 
-            "1880",
-            "1890",
-            "1900",
-            "1910"
+            "19/11/1890",
+            "19/05/1890",
+            "19/06/1890",
+            "19/03/1890"
 
         ],
 
         correctAnswer:
-            "1890",
+            "19/05/1890",
 
         score: 1
     },
@@ -133,7 +133,7 @@ const tiles = [
         caption:
             "Làng Sen (Kim Liên, Nghệ An), quê hương Chủ tịch Hồ Chí Minh.",
         question:
-        "Quê hương của Hồ Chí Minh ở đâu?",
+        "Quê hương của Chủ tịch Hồ Chí Minh ở đâu?",
 
         choices: [
 
@@ -229,26 +229,21 @@ const tiles = [
         name: "Question",
         type: "history",
 
-        image:
-            "images/hcm_young.jpg",
-        caption:
-            "Năm 1920, Nguyễn Ái Quốc tiếp cận chủ nghĩa Mác - Lênin tại Pháp.",
-        question:
-        "Ai là người tiếp cận chủ nghĩa Mác - Lênin?",
+        image: "images/Tau_Amiral_Latouche_Treville.jpg",
+        caption: "Nguyễn Ái Quốc hoạt động tại nhiều quốc gia trong giai đoạn 1911–1920.",
+
+        question: "Hoạt động nào của Nguyễn Ái Quốc thể hiện rõ nhất tính chất tìm đường cứu nước trong giai đoạn đầu (1911–1920)?",
 
         choices: [
-
-            "Phan Bội Châu",
-            "Nguyễn Ái Quốc",
-            "Trần Phú",
-            "Võ Nguyên Giáp"
-
+            "Tham gia sáng lập Đảng Cộng sản Pháp",
+            "Đi nhiều nước để khảo sát, tìm hiểu các cuộc cách mạng trên thế giới",
+            "Lãnh đạo phong trào công nhân trong nước",
+            "Thành lập Hội Việt Nam Cách mạng Thanh niên"
         ],
 
-        correctAnswer:
-            "Nguyễn Ái Quốc",
+        correctAnswer: "Đi nhiều nước để khảo sát, tìm hiểu các cuộc cách mạng trên thế giới",
 
-        score: 1
+        score: 3
     },
 
     {
@@ -314,13 +309,13 @@ const tiles = [
 
             "Tuyên ngôn độc lập",
             "Khởi nghĩa Bắc Sơn",
-            "Thành lập Đảng",
+            "Thành lập Đảng Cộng sản Việt Nam",
             "Chiến thắng Điện Biên Phủ"
 
         ],
 
         correctAnswer:
-            "Thành lập Đảng",
+            "Thành lập Đảng ộng sản Việt Nam",
 
         score: 2
     },
@@ -372,26 +367,21 @@ const tiles = [
         name: "Question",
         type: "history",
 
-        image:
-            "images/1930.jpg",
-        caption:
-            "Đảng Cộng sản Việt Nam - lực lượng lãnh đạo cách mạng Việt Nam.",
-        question:
-        "Đảng Cộng sản Việt Nam thành lập năm nào?",
+        image: "images/Luancuong_Lenin.jpg",
+        caption: "Nguyễn Ái Quốc trong quá trình hoạt động tại Pháp và Quốc tế Cộng sản.",
+
+        question: "Sự kiện nào đánh dấu bước chuyển quan trọng trong tư tưởng của Nguyễn Ái Quốc từ chủ nghĩa yêu nước sang chủ nghĩa Mác - Lênin?",
 
         choices: [
-
-            "1911",
-            "1920",
-            "1930",
-            "1945"
-
+            "Gửi bản Yêu sách của nhân dân An Nam (1919)",
+            "Tham gia Đảng Xã hội Pháp (1919)",
+            "Đọc Luận cương của Lênin (1920)",
+            "Thành lập Hội Việt Nam Cách mạng Thanh niên (1925)"
         ],
 
-        correctAnswer:
-            "1930",
+        correctAnswer: "Đọc Luận cương của Lênin (1920)",
 
-        score: 1
+        score: 3
     },
 
     // ===== PHASE 4 =====
@@ -420,7 +410,7 @@ const tiles = [
         correctAnswer:
             "Tuyên ngôn độc lập",
 
-        score: 3
+        score: 2
     },
 
     {
