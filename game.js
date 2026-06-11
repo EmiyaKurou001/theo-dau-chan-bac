@@ -68,6 +68,8 @@ const players = [
 
 let gameEnded = false;
 
+let finishOrder = [];
+
 const playerTokens = [];
 
 const tiles = [
@@ -1056,19 +1058,32 @@ function handlePlayerFinish(player){
 
     player.finished = true;
 
+    finishOrder.push(player);
+
     if(checkGameEnd()){
 
         gameEnded = true;
 
-        let winner = players[0];
+        const highestScore =
+            Math.max(...players.map(p => p.score));
 
-        players.forEach(p => {
+        const topPlayers =
+            players.filter(
+                p => p.score === highestScore
+            );
 
-            if(p.score > winner.score){
+        let winner;
 
-                winner = p;
-            }
-        });
+        if(topPlayers.length === 1){
+
+            winner = topPlayers[0];
+
+        }else{
+
+            winner = finishOrder.find(
+                p => topPlayers.includes(p)
+            );
+        }
 
         endGame(winner);
 
